@@ -5,7 +5,7 @@
 #endif
 
 
-protocol ANSIConvertible : ErrorProtocol, CustomStringConvertible {
+protocol ANSIConvertible : ErrorType, CustomStringConvertible {
   var ansiDescription: String { get }
 }
 

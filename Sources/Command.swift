@@ -11,7 +11,7 @@ struct AnonymousCommand : CommandType {
   }
 }
 
-enum CommandError : ErrorProtocol {
+enum CommandError : ErrorType {
   case InvalidArgument
 }
 

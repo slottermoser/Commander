@@ -218,7 +218,7 @@ class BoxedArgumentDescriptor {
 }
 
 
-class UsageError : ErrorProtocol, ANSIConvertible, CustomStringConvertible {
+class UsageError : ErrorType, ANSIConvertible, CustomStringConvertible {
   let message: String
   let help: Help
 
@@ -228,16 +228,16 @@ class UsageError : ErrorProtocol, ANSIConvertible, CustomStringConvertible {
   }
 
   var description: String {
-    return [message, help.description].filter { !$0.isEmpty }.joined(separator: "\n\n")
+    return [message, help.description].filter { !$0.isEmpty }.joinWithSeparator("\n\n")
   }
 
   var ansiDescription: String {
-    return [message, help.ansiDescription].filter { !$0.isEmpty }.joined(separator: "\n\n")
+    return [message, help.ansiDescription].filter { !$0.isEmpty }.joinWithSeparator("\n\n")
   }
 }
 
 
-class Help : ErrorProtocol, ANSIConvertible, CustomStringConvertible {
+class Help : ErrorType, ANSIConvertible, CustomStringConvertible {
   let command:String?
   let group:Group?
   let descriptors:[BoxedArgumentDescriptor]
@@ -263,7 +263,7 @@ class Help : ErrorProtocol, ANSIConvertible, CustomStringConvertible {
 
     if let command = command {
       let args = arguments.map { "<\($0.name)>" }
-      let usage = ([command] + args).joined(separator: " ")
+      let usage = ([command] + args).joinWithSeparator(" ")
 
       output.append("Usage:")
       output.append("")
@@ -297,7 +297,7 @@ class Help : ErrorProtocol, ANSIConvertible, CustomStringConvertible {
       }
     }
 
-    return output.joined(separator: "\n")
+    return output.joinWithSeparator("\n")
   }
 
   var ansiDescription: String {
@@ -308,7 +308,7 @@ class Help : ErrorProtocol, ANSIConvertible, CustomStringConvertible {
 
     if let command = command {
       let args = arguments.map { "<\($0.name)>" }
-      let usage = ([command] + args).joined(separator: " ")
+      let usage = ([command] + args).joinWithSeparator(" ")
 
       output.append("Usage:")
       output.append("")
@@ -342,6 +342,6 @@ class Help : ErrorProtocol, ANSIConvertible, CustomStringConvertible {
       }
     }
 
-    return output.joined(separator: "\n")
+    return output.joinWithSeparator("\n")
   }
 }
