@@ -1,0 +1,222 @@
+// !$*UTF8*$!
+{
+    archiveVersion = 1;
+    classes = {};
+    objectVersion = 46;
+    rootObject = __RootObject_;
+    objects = {
+        __RootObject_ = {
+            isa = PBXProject;
+            attributes = {LastUpgradeCheck = 9999;};
+            buildConfigurationList = ___RootConfs_;
+            compatibilityVersion = 'Xcode 3.2';
+            developmentRegion = English;
+            hasScannedForEncodings = 0;
+            knownRegions = (en);
+            mainGroup = ___RootGroup_;
+            productRefGroup = ____Products_;
+            projectDirPath = '';
+            projectRoot = '';
+            targets = (______Target_Commander);
+        };
+        '__PBXFileRef_Package.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Package.swift';
+            path = 'Package.swift';
+            sourceTree = '<group>';
+        };
+        ___RootGroup_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Package.swift', _____Configs_, _____Sources_, Dependencies_, _______Tests_, ____Products_);
+            sourceTree = '<group>';
+        };
+        _______Group_Commander = {
+            isa = PBXGroup;
+            name = Commander;
+            path = 'Sources';
+            sourceTree = '<group>';
+            children = ('__PBXFileRef_Sources/ArgumentConvertible.swift', '__PBXFileRef_Sources/ArgumentDescription.swift', '__PBXFileRef_Sources/ArgumentParser.swift', '__PBXFileRef_Sources/Command.swift', '__PBXFileRef_Sources/CommandRunner.swift', '__PBXFileRef_Sources/Commands.swift', '__PBXFileRef_Sources/CommandType.swift', '__PBXFileRef_Sources/Error.swift', '__PBXFileRef_Sources/Group.swift');
+        };
+        '__PBXFileRef_Sources/ArgumentConvertible.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ArgumentConvertible.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/ArgumentDescription.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ArgumentDescription.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/ArgumentParser.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'ArgumentParser.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Command.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Command.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/CommandRunner.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'CommandRunner.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Commands.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Commands.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/CommandType.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'CommandType.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Error.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Error.swift';
+            sourceTree = '<group>';
+        };
+        '__PBXFileRef_Sources/Group.swift' = {
+            isa = PBXFileReference;
+            lastKnownFileType = sourcecode.swift;
+            name = 'Group.swift';
+            sourceTree = '<group>';
+        };
+        ______Target_Commander = {
+            isa = PBXNativeTarget;
+            buildConfigurationList = _______Confs_Commander;
+            buildPhases = (CompilePhase_Commander, ___LinkPhase_Commander);
+            buildRules = ();
+            dependencies = ();
+            name = Commander;
+            productName = Commander;
+            productReference = _____Product_Commander;
+            productType = 'com.apple.product-type.library.dynamic';
+        };
+        _____Product_Commander = {
+            isa = PBXFileReference;
+            explicitFileType = 'compiled.mach-o.dylib';
+            path = 'libCommander.dylib';
+            sourceTree = BUILT_PRODUCTS_DIR;
+        };
+        CompilePhase_Commander = {
+            isa = PBXSourcesBuildPhase;
+            files = ('__src_cc_ref_Sources/ArgumentConvertible.swift', '__src_cc_ref_Sources/ArgumentDescription.swift', '__src_cc_ref_Sources/ArgumentParser.swift', '__src_cc_ref_Sources/Command.swift', '__src_cc_ref_Sources/CommandRunner.swift', '__src_cc_ref_Sources/Commands.swift', '__src_cc_ref_Sources/CommandType.swift', '__src_cc_ref_Sources/Error.swift', '__src_cc_ref_Sources/Group.swift');
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        '__src_cc_ref_Sources/ArgumentConvertible.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/ArgumentConvertible.swift';
+        };
+        '__src_cc_ref_Sources/ArgumentDescription.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/ArgumentDescription.swift';
+        };
+        '__src_cc_ref_Sources/ArgumentParser.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/ArgumentParser.swift';
+        };
+        '__src_cc_ref_Sources/Command.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Command.swift';
+        };
+        '__src_cc_ref_Sources/CommandRunner.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/CommandRunner.swift';
+        };
+        '__src_cc_ref_Sources/Commands.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Commands.swift';
+        };
+        '__src_cc_ref_Sources/CommandType.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/CommandType.swift';
+        };
+        '__src_cc_ref_Sources/Error.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Error.swift';
+        };
+        '__src_cc_ref_Sources/Group.swift' = {
+            isa = PBXBuildFile;
+            fileRef = '__PBXFileRef_Sources/Group.swift';
+        };
+        ___LinkPhase_Commander = {
+            isa = PBXFrameworksBuildPhase;
+            files = ();
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        _______Confs_Commander = {
+            isa = XCConfigurationList;
+            buildConfigurations = (___DebugConf_Commander, _ReleaseConf_Commander);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+        ___DebugConf_Commander = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_SWIFT_FLAGS = '$(inherited)'; SWIFT_OPTIMIZATION_LEVEL = '-Onone'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = 'lib$(TARGET_NAME)'; };
+            name = Debug;
+        };
+        _ReleaseConf_Commander = {
+            isa = XCBuildConfiguration;
+            buildSettings = { LD_RUNPATH_SEARCH_PATHS = '$(TOOLCHAIN_DIR)/usr/lib/swift/macosx'; PRODUCT_MODULE_NAME = '$(TARGET_NAME:c99extidentifier)'; ENABLE_TESTABILITY = 'YES'; OTHER_LDFLAGS = '$(inherited)'; PRODUCT_NAME = 'lib$(TARGET_NAME)'; OTHER_SWIFT_FLAGS = '$(inherited)'; };
+            name = Release;
+        };
+        __Dependency_Commander = {
+            isa = PBXTargetDependency;
+            target = ______Target_Commander;
+        };
+        '__PBXFileRef_Commander.xcodeproj/Configs/Project.xcconfig' = {
+            isa = PBXFileReference;
+            lastKnownFileType = text.xcconfig;
+            name = 'Project.xcconfig';
+            path = 'Commander.xcodeproj/Configs/Project.xcconfig';
+            sourceTree = '<group>';
+        };
+        _____Configs_ = {
+            isa = PBXGroup;
+            children = ('__PBXFileRef_Commander.xcodeproj/Configs/Project.xcconfig');
+            name = Configs;
+            sourceTree = '<group>';
+        };
+        _____Sources_ = {
+            isa = PBXGroup;
+            children = (_______Group_Commander);
+            name = Sources;
+            sourceTree = '<group>';
+        };
+        ____Products_ = {
+            isa = PBXGroup;
+            children = (_____Product_Commander);
+            name = Products;
+            sourceTree = '<group>';
+        };
+        _______Debug_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_Commander.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Debug;
+        };
+        _____Release_ = {
+            isa = XCBuildConfiguration;
+            baseConfigurationReference = '__PBXFileRef_Commander.xcodeproj/Configs/Project.xcconfig';
+            buildSettings = {};
+            name = Release;
+        };
+        ___RootConfs_ = {
+            isa = XCConfigurationList;
+            buildConfigurations = (_______Debug_, _____Release_);
+            defaultConfigurationIsVisible = 0;
+            defaultConfigurationName = Debug;
+        };
+    };
+}
